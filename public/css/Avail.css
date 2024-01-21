@@ -1,0 +1,367 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.distrit {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  z-index: 0;
+}
+
+.dist {
+  width: 7rem;
+  height: 2rem;
+  border: 2px solid green;
+  border-radius: 8px;
+  text-align: center;
+}
+.unit {
+  display: flex;
+  flex-direction: row;
+}
+.unitr {
+  width: 50%;
+  background-color: rgb(170, 113, 113);
+  text-align: center;
+  color: white;
+}
+.unitl {
+  width: 50%;
+  background-color: rgb(170, 113, 113);
+  text-align: center;
+  color: white;
+}
+
+.section {
+  display: flex;
+  width: 100vw;
+  z-index: 0;
+}
+.para {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+/* // for Angul */
+.contanerAngul {
+  display: none;
+}
+.contanerAngul.Ang {
+   width: 100vw;
+  display: flex;
+ display: block;
+ z-index: 0;
+}
+/* for Balangire */
+.contanerBalangire {
+  display: none;
+}
+.contanerBalangire.Bal {
+ display: flex;
+ display: block;
+}
+
+/* for Balasore */
+.contanerBalasore {
+  display: none;
+}
+.contanerBalasore.Bala {
+  display: flex;
+ display: block;
+}
+
+/* for Bargarh */
+.contanerBargarh {
+  display: none;
+}
+.contanerBargarh.Bar {
+    display: flex;
+ display: block;
+}
+
+/* for Bhadrak */
+.contanerBhadrak {
+  display: none;
+}
+.contanerBhadrak.Bha {
+ display: flex;
+ display: block;
+}
+
+/* for Boudh */
+.contanerBoudh {
+  display: none;
+}
+.contanerBoudh.Bou {
+ display: flex;
+ display: block;
+}
+
+/* for Cuttack */
+.contanerCuttack {
+  display: none;
+}
+.contanerCuttack.Cut {
+ display: flex;
+ display: block;
+}
+
+/* for Deogarh */
+.contanerDeogarh {
+  display: none;
+}
+.contanerDeogarh.Deo {
+  display: flex;
+ display: block;
+}
+
+/* for Dhenkanal */
+.contanerDhenkanal {
+  display: none;
+}
+.contanerDhenkanal.Dhe {
+  display: flex;
+ display: block;
+}
+
+/* for Ganjam */
+.contanerGanjam {
+  display: none;
+}
+.contanerGanjam.Gan {
+  display: flex;
+ display: block;
+}
+
+/* for Gajapati */
+.contanerGajapati {
+  display: none;
+}
+
+.contanerGajapati.Gaj {
+ display: flex;
+ display: block;
+}
+
+/* for Jharsugudae */
+.contanerJharsugudae {
+  display: none;
+}
+.contanerJharsugudae.Jha {
+ display: flex;
+ display: block;
+  pointer-events: auto;
+}
+/* for Jajpur */
+.contanerJajpur {
+  display: none;
+}
+.contanerJajpur.Jaj {
+ display: flex;
+ display: block;
+}
+
+/* for Jagatsinghapur */
+.contanerJagatsinghapur {
+  display: none;
+}
+.contanerJagatsinghapur.Jag {
+ display: flex;
+ display: block;
+}
+
+/* for Khordha */
+.contanerKhordha {
+  display: none;
+}
+.contanerKhordha.Kho {
+ display: flex;
+ display: block;
+}
+
+/* for Keonjhar */
+.contanerKeonjhar {
+  display: none;
+}
+
+.contanerKeonjhar.Keo {
+  display: flex;
+ display: block;
+}
+/* for Kalahandi */
+.contanerKalahandi {
+  display: none;
+}
+.contanerKalahandi.Kal {
+  display: flex;
+ display: block;
+}
+/* for Kandhamal */
+.contanerKandhamal {
+  display: none;
+}
+.contanerKandhamal.Kan {
+ display: flex;
+ display: block;
+}
+
+/* for Koraput */
+.contanerKoraput {
+  display: none;
+}
+.contanerKoraput.Kor {
+ display: flex;
+ display: block;
+}
+/* for Kendrapara */
+.contanerKendrapara {
+  display: none;
+}
+
+.contanerKendrapara.Ken {
+ display: flex;
+ display: block;
+}
+
+/* for Malkangiri */
+.contanerMalkangiri {
+  display: none;
+}
+
+.contanerMalkangiri.Mal {
+ display: flex;
+ display: block;
+}
+
+/* for Mayurbhanj */
+.contanerMayurbhanj {
+  display: none;
+}
+
+.contanerMayurbhanj.May {
+ display: flex;
+ display: block;
+}
+
+/* for Nabarangpur */
+.contanerNabarangpur {
+  display: none;
+}
+.contanerNabarangpur.Nab {
+  display: flex;
+ display: block;
+}
+
+/* for Nuapada */
+.contanerNuapada {
+  display: none;
+}
+.contanerNuapada.Nua {
+ display: flex;
+ display: block;
+}
+
+/* for Nayagarh */
+.contanerNayagarh {
+  display: none;
+}
+.contanerNayagarh.Nay {
+  display: flex;
+ display: block;
+}
+
+/* for Puri */
+.contanerPuri {
+  display: none;
+}
+.contanerPuri.Pur {
+ display: flex;
+ display: block;
+}
+
+/* for Rayagada */
+.contanerRayagada {
+  display: none;
+}
+.contanerRayagada.Ray {
+ display: flex;
+ display: block;
+}
+
+/* for Sambalpur */
+.contanerSambalpur {
+  display: none;
+}
+.contanerSambalpur.Sam {
+display: flex;
+ display: block;
+}
+
+/* for Sonepur */
+.contanerSonepur {
+  display: none;
+}
+.contanerSonepur.Son {
+ display: flex;
+ display: block;
+}
+
+/* for Sundargarh */
+.contanerSundargarh {
+  display: none;
+}
+.contanerSundargarh.Sun {
+ display: flex;
+ display: block;
+}
+
+.leftCont {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-around;
+  gap: 10px;
+  background-color: rgb(255, 255, 255);
+}
+#Cbox {
+  box-shadow: inset 0 -3em 3em rgba(255, 38, 38, 0.1),
+    10px 5px 5px 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.disthbtn{
+  margin-top: 5px;
+  background-color: rgb(59, 4, 131);
+  padding: 0px 5px;
+  border: none;
+  border-radius: 10%;
+}
+.card-link{
+  text-decoration: none;
+  color: red;
+}
+.disthdiv{
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 560px) {
+  .distrit {
+    width: 100vw;
+  }
+  .dist {
+  width: 4rem;
+  height: 1.5rem;
+  font-size: xx-small;
+}
+
+}

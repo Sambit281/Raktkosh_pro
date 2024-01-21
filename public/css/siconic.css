@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.iconic {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(252, 252, 252);
+  margin-bottom: 5px;
+}
+.slide-container {
+  max-width: 1180px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.side-content {
+  margin: 5px 30px;
+}
+.card {
+  width: 320px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070f4;
+  border-radius: 25px 25px 0 25px;
+  overflow: hidden;
+}
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -35px;
+  height: 35px;
+  width: 35px;
+  background-color: #4070f4;
+}
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 3px;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070f4;
+}
+.name {
+  font-size: 20px;
+  font-weight: 300;
+  color: #333;
+}
+.roll {
+  font-size: 15px;
+  font-weight: 100;
+  color: #848484;
+  text-align: right;
+}
+.description {
+  padding: 5px;
+  font-size: 16px;
+  color: #707070;
+  text-align: center;
+}
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: all 0.3s ease;
+}
+.button:hover {
+  background: #265df2;
+}
