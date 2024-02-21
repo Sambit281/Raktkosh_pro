@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://localhost:27017/donerRegistion", {
+  .connect("mongodb+srv://s4sambit632:GwKb07WQPSa5Zqwg@cluster0.11ujaoz.mongodb.net/donerRegistion", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     // useCreateIndex: true,
@@ -9,6 +9,8 @@ mongoose
   .then(() => {
     console.log(`connection successful`);
   })
-  .catch((e) => {
-    console.log(e);
+  .catch((err) => {
+    console.log("error asi gala");
+    console.log(err.message);
+    process.exit(1)
   });

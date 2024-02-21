@@ -20,12 +20,19 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(static_path));
 app.set("view engine", "hbs");
 
-app.get("/", (req, res) => {
-  res.render("Homepage");
-});
+// app.get("/", (req, res) => {
+//   res.render("Homepage", {
+//     donorReg: "10",
+//     bloodCollect: "11",
+//   });
+// });
 
-app.get("/index", (req, res) => {
-  res.render("index");
+
+app.get("/", (req, res) => {
+  res.render("index", {
+    donorReg: "110",
+    bloodCollect: "110",
+  });
 });
 app.get("/Homepage", (req, res) => {
   res.render("Homepage");
@@ -80,7 +87,8 @@ app.post("/donerRegister", async (req, res) => {
     });
 
     const registerd = await donerRegisters.save();
-    res.status(201).render("Homepage");
+
+    res.status(201).render("index");
   } catch (error) {
     res.status(400).send(error);
   }
@@ -103,7 +111,7 @@ app.post("/BloodRequest", async (req, res) => {
     });
 
     const request = await bloodrequests.save();
-    res.status(201).render("Homepage");
+    res.status(201).render("index");
   } catch (error) {
     res.status(400).send(error);
   }
@@ -125,7 +133,7 @@ app.post("/campRegister", async (req, res) => {
     });
 
     const registerd = await campRegisters.save();
-    res.status(201).render("Homepage");
+    res.status(201).render("index");
   } catch (error) {
     res.status(400).send(error);
   }
@@ -163,7 +171,7 @@ app.post("/Loginpage", async (req, res) => {
     const useremail = await loginRegister.findOne({ Email: Lemail });
 
     if (useremail.password == Lpassword) {
-      res.status(201).render("Homepage");
+      res.status(201).render("HomePage");
     } else {
       res.send("Data is invalid Login");
     }
