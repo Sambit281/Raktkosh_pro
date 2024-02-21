@@ -7,6 +7,7 @@
   scroll-behavior: smooth;
 }
 
+
 .float {
   position: fixed;
   bottom: 8%;
@@ -30,7 +31,39 @@
   cursor: pointer;
   /* box-shadow: 0 -2px 3px -1px #00778b; */
 }
-
+.alertb{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  backdrop-filter: blur(10px);
+  display: none;
+}
+.alertm{
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 20vh;
+  background-color:  #08837b;
+  border-radius: 1rem;
+  z-index: 10;
+  font-weight: bolder;
+  font-size: large;
+  color: rgb(255, 255, 255);
+}
+.alertb.show{
+  display: block;
+}
+.alertmspan{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
 /* nav bar all class and id */
 .navbar {
   position: fixed;
@@ -297,6 +330,11 @@
   /* .TMcontaner {
     height: 20vh;
   } */
+  .alertm{
+    left: 8vw;
+    width: 80vw;
+    height: 20vh;
+  }
   #LTright {
     width: 100vw;
   }
