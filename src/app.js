@@ -2,6 +2,8 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
+require("dotenv").config();
+
 require("./Db/conn");
 const donerRegister = require("./Model/donerReg");
 const loginRegister = require("./Model/loginreg");
@@ -181,5 +183,5 @@ app.post("/Loginpage", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`sambit is present ${port}`);
+  console.log(`Conection Successful at port : ${port}`);
 });

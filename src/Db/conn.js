@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
 
+require("dotenv").config();
+
 mongoose
-  .connect("mongodb+srv://s4sambit632:GwKb07WQPSa5Zqwg@cluster0.11ujaoz.mongodb.net/donerRegistion", {
+  .connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     // useCreateIndex: true,
